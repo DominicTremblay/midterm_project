@@ -19,9 +19,12 @@
 <body>
   <h1>Have fun! 🥔</h1>
 
-  <ul id="widget-list">
+  <ul>
 
+    <% for (let widget of widgets) { %>
 
+      <li><%= widget.id %> - <%= widget.name%> </li>
+    <% } %>
 
 
   </ul>

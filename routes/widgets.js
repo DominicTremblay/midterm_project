@@ -15,7 +15,9 @@ module.exports = (db) => {
     db.query(query)
       .then(data => {
         const widgets = data.rows;
-        res.json({ widgets });
+        const templateVars = {widgets};
+        console.log(templateVars);
+        res.json({widgets})
       })
       .catch(err => {
         res
