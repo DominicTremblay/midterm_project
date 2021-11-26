@@ -25,5 +25,11 @@ module.exports = (db) => {
           .json({ error: err.message });
       });
   });
+
+  // get the date of both widgets and users
+  router.get("/users", (req, res) => {
+
+  }
+
   return router;
 };
